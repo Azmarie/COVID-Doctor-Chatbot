@@ -8,7 +8,6 @@ We present a Seq2Seq based conversational agent (chatbot) that can answer querie
 
 The model uses patients’ COVID related questions and previous replies of the certified doctors scraped from the internet as input [1]. The model is trained with the attention based Transformer [2] architectures like GPT [3] and BART [4] to ensure it pays attention to important part of the input sequence when decoding. 
 
-Furthermore, we present data augmentation approach to efficiently counter the problems coming from shortage of data.
 
 ## Sample Output
 | Short user query                    | Long user query       
