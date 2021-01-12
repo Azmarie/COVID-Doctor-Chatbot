@@ -1,0 +1,29 @@
+*.pyc
+*.score
+*.log
+.DS_Store
+venv
+__pycache__
+.DS_Store
+*.egg-info
+.ipynb_checkpoints
+save
+vanilla_attention/weights
+lightning/weights
+lightning/split_data
+.vector_cache
+data/COVID-Dialogue-Dataset-Chinese.json
+split_data
+*.yaml
+*.ckpt
+*.gz
+
+# GPT2
+cached/
+gpt2-finetune/data
+gpt2-finetune/output-small-save/*.bin
+
+# Submission related
+# output/
+*.output
+source/
