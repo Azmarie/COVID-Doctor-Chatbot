@@ -4,13 +4,19 @@ Create a doctor chatbot that carries out conversation regarding COVID-19
 
 ## Overview
 
-We present a Seq2Seq based conversational agent (chatbot) that can answer queries from patients regarding topics related to COVID-19. The model uses patients’ COVID related questions and previous replies of the certified doctors scraped from the internet as input. The model is trained with the attention based Transformer (Vaswani et al., 2017) architectures like GPT and BART to ensure it pays attention to important part of the input sequence when decoding. Furthermore, we present data augmentation approach to efficiently counter the problems coming from shortage of data.
+We present a Seq2Seq based conversational agent (chatbot) that can answer queries from patients regarding topics related to COVID-19. 
+
+The model uses patients’ COVID related questions and previous replies of the certified doctors scraped from the internet as input [1]. The model is trained with the attention based Transformer [2] architectures like GPT [3] and BART [4] to ensure it pays attention to important part of the input sequence when decoding. 
+
+Furthermore, we present data augmentation approach to efficiently counter the problems coming from shortage of data.
 
 ## Sample Output
-![](teaser/short.png) 
-![](teaser/long.png) 
+| Short user query                    | Long user query       
+|---------------------------------------|-------------------------------------------------------------|
+| ![Sample output](teaser/short.png)  | ![Sample output](teaser/long.png)  |
 
-See `output/` for all outputs on test data.
+
+See `output.zip` for all outputs on test data.
 
 ## Set up the virtual environment
 
@@ -31,7 +37,6 @@ pip3 install -r requirements.txt
 python3 evaluate.py --o output/transformer_output.txt 
 python3 evaluate.py --o output/gpt2_output.txt 
 python3 evaluate.py --o output/Bart_output.txt 
-
 ```
 
 ## Misc
@@ -49,12 +54,12 @@ Predict: brief opinion : ? covid - 19 in have from you like to - 19 . yes should
 ```
 
 ## Acknowledgment
-- Covid MedDialog Dataset from [UCSD-AI4H](https://github.com/UCSD-AI4H/COVID-Dialogue)
-- GPT2 implementation adapted from [DialoGPT](https://github.com/microsoft/DialoGPT)
-- Transformer adapted from [this implementation](https://github.com/UCSD-AI4H/Medical-Dialogue-System)
-- BART implementation adapted from [this blog](https://towardsdatascience.com/bart-for-paraphrasing-with-simple-transformers-7c9ea3dfdd8c)
+- [1] Covid MedDialog Dataset from [UCSD-AI4H](https://github.com/UCSD-AI4H/COVID-Dialogue)
+- [2] Transformer adapted from [this implementation](https://github.com/UCSD-AI4H/Medical-Dialogue-System)
+- [3] GPT2 implementation adapted from [DialoGPT](https://github.com/microsoft/DialoGPT)
+- [4] BART implementation adapted from [this blog](https://towardsdatascience.com/bart-for-paraphrasing-with-simple-transformers-7c9ea3dfdd8c)
 
 ### Our Team
-Philip Cho
-Chenhao Wang
-Azmarie Wang
+- Philip Cho
+- Chenhao Wang
+- Azmarie Wang
